@@ -6,6 +6,7 @@ import Tarifs from "./components/Tarifs";
 import ActivityPage from "./components/ActivityPage";
 import WhyChoose from "./components/WhyChoose";
 import ClubLife from "./components/ClubLife";
+import EliteTraining from "./components/EliteTraining";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -55,7 +56,7 @@ export default function App() {
         id="activity-tennis"
         title="Tennis"
         icon="🏆"
-        desc="8 courts en terre battue dans un cadre arboré, adaptés à la pratique loisir comme à la compétition."
+        desc="7 courts en terre battue dans un cadre arboré, adaptés à la pratique loisir comme à la compétition."
         bullets={[
           "Courts entretenus quotidiennement",
           "Éclairage nocturne pour le jeu après le travail",
@@ -69,7 +70,7 @@ export default function App() {
         id="activity-padel"
         title="Padel"
         icon="🎾"
-        desc="Un court de padel dernière génération pour découvrir ce sport dynamique en équipe."
+        desc="4 courts de padel dernière génération, dont 3 panoramiques et 1 court classique, pour découvrir ce sport dynamique en équipe."
         bullets={[
           "Revêtement de qualité et éclairage LED",
           "Location simple par créneaux horaires",
@@ -108,6 +109,8 @@ export default function App() {
       />
 
       <WhyChoose />
+
+      <EliteTraining />
 
       <ClubLife />
 

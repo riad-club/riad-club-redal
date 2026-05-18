@@ -39,7 +39,7 @@ const Hero = () => (
 
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
         <Stat icon="👥" value="800+" label="Membres actifs" />
-        <Stat icon="🏆" value="8" label="Courts de tennis" />
+        <Stat icon="🏆" value="7" label="Courts de tennis" />
         <Stat icon="📅" value="50+" label="Ans d'histoire" />
       </div>
 
@@ -49,7 +49,7 @@ const Hero = () => (
           <span className="h-7 w-7 rounded-xl bg-emerald-50 border border-emerald-100 grid place-items-center text-emerald-700 text-sm">
             🎾
           </span>
-          <span>8 courts de tennis • 1 court de padel • Piscine</span>
+          <span>7 courts de tennis • 4 courts de padel • Piscine</span>
         </div>
         <div className="flex items-center gap-2">
           <span className="h-7 w-7 rounded-xl bg-emerald-50 border border-emerald-100 grid place-items-center text-emerald-700 text-sm">

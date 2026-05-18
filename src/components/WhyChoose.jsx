@@ -37,12 +37,12 @@ const WhyChoose = () => (
               <div className="text-slate-300">Membres</div>
             </div>
             <div>
-              <div className="font-bold text-white text-xl">8</div>
+              <div className="font-bold text-white text-xl">7</div>
               <div className="text-slate-300">Courts tennis</div>
             </div>
             <div>
-              <div className="font-bold text-white text-xl">1</div>
-              <div className="text-slate-300">Court padel</div>
+              <div className="font-bold text-white text-xl">4</div>
+              <div className="text-slate-300">Courts padel</div>
             </div>
             <div>
               <div className="font-bold text-white text-xl">1972</div>

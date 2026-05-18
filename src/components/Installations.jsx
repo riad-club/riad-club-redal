@@ -15,7 +15,7 @@ const Installations = ({ onMore, activeCardId, onCardClick }) => (
         id="tennis"
         title="Tennis"
         icon="🏆"
-        desc="8 courts en terre battue dans un cadre arboré, adaptés à la pratique loisir comme à la compétition."
+        desc="7 courts en terre battue dans un cadre arboré, adaptés à la pratique loisir comme à la compétition."
         bullets={[
           "Courts entretenus quotidiennement",
           "Éclairage nocturne pour le jeu après le travail",
@@ -30,7 +30,7 @@ const Installations = ({ onMore, activeCardId, onCardClick }) => (
         id="padel"
         title="Padel"
         icon="🎾"
-        desc="Un court de padel dernière génération pour découvrir ce sport dynamique en équipe."
+        desc="4 courts de padel dernière génération, dont 3 panoramiques et 1 court classique, pour découvrir ce sport dynamique en équipe."
         bullets={[
           "Revêtement de qualité et éclairage LED",
           "Location simple par créneaux horaires",
