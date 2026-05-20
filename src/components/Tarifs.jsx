@@ -73,7 +73,7 @@ const Tarifs = () => {
           <p className="text-lg text-slate-700 mb-6">Choisissez votre formule et rejoignez le Riad Club.</p>
           <a
             ref={buttonRef}
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfFnsqyqym36GtmakQZwLWSV2V049fkZWfCCUOYrhy5xE_R9w/viewform?usp=publish-editor"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdlKJGJEFDwMzGGzCe2TCCJ-0FsXM4DiRAb452veQSy5NoAoA/viewform?usp=publish-editor"
             target="_blank"
             rel="noreferrer"
             className={`inline-flex items-center justify-center rounded-xl bg-emerald-700 px-8 py-3 text-base font-semibold text-white shadow-lg hover:bg-emerald-800 transition-all duration-300 ease-in-out hover:scale-105 ${
