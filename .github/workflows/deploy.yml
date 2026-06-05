@@ -1,0 +1,22 @@
+name: Déploiement vers Azure App Service
+
+on:
+  push:
+    branches:
+      - main  # Déclenche le déploiement lors d'un push sur la branche 'main' (ou 'master')
+
+jobs:
+  web-deploy:
+    name: 🚀 Déployer le site via FTPS
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Récupérer le code du dépôt
+      uses: actions/checkout@v4
+
+    - name: 📂 Synchroniser les fichiers sur Azure
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: waws-prod-esc-005.ftp.azurewebsites.windows.net
+        username: ${{ secrets.AZURE_FTP_USERNAME }}
+        password: ${{ secrets.AZURE_FTP_PASSWORD }}
+        server-dir: /site/wwwroot/
