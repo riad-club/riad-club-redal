@@ -3,20 +3,35 @@ name: Déploiement vers Azure App Service
 on:
   push:
     branches:
-      - main  # Déclenche le déploiement lors d'un push sur la branche 'main' (ou 'master')
+      - main
 
 jobs:
   web-deploy:
-    name: 🚀 Déployer le site via FTPS
+    name: Déployer le site via FTPS
     runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Récupérer le code du dépôt
-      uses: actions/checkout@v4
 
-    - name: 📂 Synchroniser les fichiers sur Azure
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: waws-prod-esc-005.ftp.azurewebsites.windows.net
-        username: ${{ secrets.AZURE_FTP_USERNAME }}
-        password: ${{ secrets.AZURE_FTP_PASSWORD }}
-        server-dir: /site/wwwroot/
+    steps:
+      - name: Récupérer le code du dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Installer les dépendances
+        run: npm install
+
+      - name: Construire le site
+        run: npm run build
+
+      - name: Synchroniser les fichiers sur Azure
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: waws-prod-esc-005.ftp.azurewebsites.windows.net
+          username: ${{ secrets.AZURE_FTP_USERNAME }}
+          password: ${{ secrets.AZURE_FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./dist/
+          server-dir: /site/wwwroot/
