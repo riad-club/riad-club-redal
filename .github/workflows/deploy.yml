@@ -35,3 +35,4 @@ jobs:
           port: 21
           local-dir: ./dist/
           server-dir: /site/wwwroot/
+          force-ftp: true # 👈 AJOUTÉ : Pour éviter que le serveur Azure ne coupe brutalement la connexion
